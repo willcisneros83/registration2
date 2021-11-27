@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav id="menu-container">
+            <a href="index.html" class="menu">Home</a>
+            <a href="register.html" class="menu">Register</a>
+            <a href="#" class="menu">Users</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Super Registration System</h1>
+        <div class="container">
+            <!--create a form(inputs) with the next fields: email,password,firstname,age,adresss,phone,payment color-->
+            <input class="form-control" type="email" placeholder="Enter email" id="txtEmail">
+            <input class="form-control" type="password" placeholder="Enter passowrd" id="txtPassword">
+            <input class="form-control" type="text" placeholder="Enter name" id="txtFirst">
+            <input class="form-control" type="text" placeholder="Enter name" id="txtLast">
+            <input class="form-control" type="text" placeholder="Enter age" id="txtAge">
+            <input class="form-control" type="tel" placeholder="Enter a phone number" id="txtPhone">
+            <input class="form-control" type="text" placeholder="Enter address" id="txtAddress">
+            <input class="form-control" type="text" placeholder="Color" id="txtColor">
+            <input class="form-control" type="text" placeholder="Card Number" id="paymentMethod">
+            <button onclick="registerUser();">Register User</button>
+            </div>
+
+    </main>
+    <table id="usersTable">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+    </table>
+    <footer>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/register.js"></script>
+</body>
+</html>
